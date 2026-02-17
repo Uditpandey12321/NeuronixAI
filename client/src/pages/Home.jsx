@@ -13,9 +13,7 @@ const Home = () => {
         <Hero/>
         <AiTools/>
         <Testimonial/>
-       
-        {/* <Plan/>  have to add the plan component here */}
-        
+        <Plan/>
         <Footer/>
     </>
   )
