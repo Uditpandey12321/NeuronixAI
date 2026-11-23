@@ -22,7 +22,7 @@ export const generateArticle = async (req, res) => {
         const plan = req.plan;
         const free_usage = req.free_usage;
 
-        if(plan !== 'premium' && free_usage >= 10) {
+        if(plan == 'premium' && free_usage >= 10) {
             return res.json({ success: false, message: "Free usage limit exceeded. Upgrade to premium for more requests." });
         }
 
